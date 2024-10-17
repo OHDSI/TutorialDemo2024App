@@ -1,0 +1,11 @@
+version: '3.8'
+services:
+  DemoTut2024:
+    image: ohdsi/tutorialdemo2024
+    env_file: .env
+    build:
+      context: .
+      args:
+        APP_NAME: TutorialDemo2024
+    ports:
+      - "3838:3838"
